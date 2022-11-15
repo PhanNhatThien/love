@@ -198,3 +198,40 @@ input[type=button] {
 	font-weight: 700;
 	font-size: 15px;
 }
+
+
+
+/* CSS sidebar */
+section.sidebar ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}
+section.sidebar > ul > li > a > i{
+	border: 1px solid #f7682d;
+	color:white;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 3px;
+	background-color: #f7682d;
+	transition: transform 0.5s;
+}
+section.sidebar > ul > li:nth-child(even) > a > i{
+	background-color:#1dab8a;
+	border: 1px solid #1dab8a;
+}
+/* section.sidebar > ul > li > a#gototop {
+	display:none;
+} */
+section.sidebar{
+	position:fixed;
+	top: 30%;
+	right:0%;
+	z-index: 10000;
+	margin: 0;
+	padding: 0;
+}
+
+section.sidebar > ul > li > a > i:hover{
+	transform: scale(1.2);
+}
